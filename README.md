@@ -33,8 +33,8 @@ Then you can run a new container, passing those files to it:
 ```
 docker run --name instaloader -it \
     -v $(pwd)\download:/download 
-    -v $(pwd)\docker\il_args.txt:/il_args.txt 
-    -v $(pwd)\docker\il_targets.txt:/il_targets.txt 
+    -v $(pwd)\il_args.txt:/il_args.txt 
+    -v $(pwd)\il_targets.txt:/il_targets.txt 
     instaloader
 ```
 
