@@ -35,7 +35,7 @@ docker run --name instaloader -it \
     -v $(pwd)\download:/download 
     -v $(pwd)\il_args.txt:/il_args.txt 
     -v $(pwd)\il_targets.txt:/il_targets.txt 
-    instaloader
+    didc/docker-instaloader
 ```
 
 By default, media will be downloaded to `./download/[target]`. The folder/file structure can be modified via Instaloader arguments using `--dirname-pattern` or `--filename-pattern`.
