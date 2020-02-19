@@ -4,6 +4,17 @@ Docker image with `instaloader` in it. See [instaloader/instaloader](https://git
 
 Some of this was inspired by [shyd/docker-instagram-scraper](https://github.com/shyd/docker-instagram-scraper), another good option for Instagram archiving.
 
+## Instaloader versions
+
+I do my best to keep this updated whenever there is a release of Instaloader. Going forward, I plan to create a new tag for each [Instaloader release version](https://github.com/instaloader/instaloader/releases).
+
+`didc/docker-instaloader:latest` -- latest official release version
+
+`didc/docker-instaloader:a.b.c` -- version a.b.c. For example, alpha v4.3a1 can be pulled via:
+`docker pull didc/docker-instaloader:4.3a1`
+
+[Full list of available tags](https://hub.docker.com/r/didc/docker-instaloader/tags)
+
 ## Usage
 
 For full Instaloader usage, refer to [their great documentation here](https://instaloader.github.io/index.html).
