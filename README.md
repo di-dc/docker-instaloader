@@ -39,6 +39,8 @@ user_2
 [etc]
 ```
 
+Decide if you would like the container to run continuously or only once. If you would like the container to keep re-running then set a `SLEEP_DURATION` environment variable with a value of the number of seconds to wait between the last run finishing and the next run starting.
+
 Then you can run a new container, passing those files to it:
 
 ```
@@ -46,6 +48,7 @@ docker run --name instaloader -it \
     -v $(pwd)\download:/download 
     -v $(pwd)\il_args.txt:/il_args.txt 
     -v $(pwd)\il_targets.txt:/il_targets.txt 
+    -e "SLEEP_DURATION=3600" 
     didc/docker-instaloader
 ```
 
