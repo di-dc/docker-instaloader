@@ -1,7 +1,7 @@
 FROM python:3-alpine
 
 RUN pip install --upgrade pip
-RUN pip3 install instaloader==4.8.1
+RUN pip3 install instaloader
 
 RUN mkdir /download
 
