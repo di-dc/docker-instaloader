@@ -1,7 +1,7 @@
 FROM python:3-alpine
 
 RUN pip install --upgrade pip
-RUN pip3 install instaloader==4.11
+RUN pip3 install instaloader==4.12
 
 RUN mkdir /download
 
